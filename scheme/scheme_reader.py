@@ -123,7 +123,9 @@ def scheme_read(src):
         # END PROBLEM 1
     elif val in quotes:
         # BEGIN PROBLEM 7
-        "*** YOUR CODE HERE ***"
+        while val is not nil:
+            scheme_read(val.first)
+            val.first = val.rest
         # END PROBLEM 7
     elif val not in DELIMITERS:
         return val
